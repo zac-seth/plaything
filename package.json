@@ -26,6 +26,11 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1"
   },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "homepage": "https://zac-seth.github.io/plaything/",
   "jest": {
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
