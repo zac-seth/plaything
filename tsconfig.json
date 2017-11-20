@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "jsx": "react"
+  },
+  "files": [
+    "./typings/custom/enzyme-adapter-react-16.d.ts"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}

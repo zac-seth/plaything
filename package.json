@@ -1,0 +1,44 @@
+{
+  "name": "plaything",
+  "version": "0.0.1",
+  "description": "Playing around",
+  "main": "src/index.ts",
+  "author": "Zac Seth",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/enzyme": "^3.1.4",
+    "@types/jest": "^21.1.6",
+    "awesome-typescript-loader": "^3.4.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "es-abstract": "^1.9.0",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^16.1.1",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "^21.2.3",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.25",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/_specs/.*|\\.(spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest.polyfill.js",
+      "<rootDir>/jest.setup.ts"
+    ]
+  }
+}
