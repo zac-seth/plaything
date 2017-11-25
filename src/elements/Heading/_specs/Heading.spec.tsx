@@ -21,8 +21,6 @@ describe(`When rendering the Heading component`, () => {
   it(`Should render an h1 element`, () => {
     const h1Node: ShallowWrapper<HTMLAttributes, undefined> = heading.find(`h1`)
 
-    console.log(heading.hostNodes())
-
     expect(h1Node.length).toBe(1)
   })
 })

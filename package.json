@@ -31,30 +31,8 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --config config/jest/jest.config.js",
     "build": "webpack"
   },
-  "homepage": "https://zac-seth.github.io/plaything/",
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/mocks/fileMock.ts",
-      "\\.(css|less)$": "<rootDir>/config/jest/mocks/styleMock.ts",
-      
-      "^elements/(.*)$": "<rootDir>/src/elements/$1",
-      "^public/(.*)$": "<rootDir>/src/public/$1"
-    },
-    "setupFiles": [
-      "<rootDir>/config/jest/jest.polyfill.ts",
-      "<rootDir>/config/jest/jest.setup.ts"
-    ],
-    "testRegex": "(/_specs/.*|\\.(spec))\\.(ts|tsx|js)$",
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    }
-  }
+  "homepage": "https://zac-seth.github.io/plaything/"
 }
