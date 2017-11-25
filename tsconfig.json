@@ -17,5 +17,14 @@
   ],
   "include": [
     "./src/**/*"
-  ]
+  ],
+  "rootDir": "./src/",
+  "paths": {
+    "elements": [
+      "elements/*"
+    ],
+    "public": [
+      "public/*"
+    ]
+  }
 }

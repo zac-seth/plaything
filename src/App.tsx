@@ -1,11 +1,18 @@
-import * as React from 'react';
+import * as React from 'react'
+import { Route } from 'react-router'
 
-import Heading from './Heading';
+import AppContainer from 'elements/AppContainer'
 
-const App = () => (
-  <div>
-    <Heading name="Zac" />
-  </div>
-);
+import Public from 'public/Public'
 
-export default App;
+export interface IAppProps {
+  name: string,
+}
+
+const App = ({ name }: IAppProps) => (
+  <AppContainer>
+    <Route exact path="/" component={Public} />
+  </AppContainer>
+)
+
+export default App
