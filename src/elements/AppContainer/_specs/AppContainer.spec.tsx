@@ -5,7 +5,7 @@ import {
   ShallowWrapper,
 } from 'enzyme'
 
-import AppContainer from 'elements/AppContainer/AppContainer'
+import AppContainer from '../AppContainer'
 
 let appContainer: ShallowWrapper<undefined, undefined>
 

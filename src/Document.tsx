@@ -6,9 +6,10 @@ export interface IDocumentContent {
   description: string,
   initialData: any,
   title: string,
+  vendorPath: string,
 }
 
-const Document = ({ bundlePath, children, description, initialData, title}: IDocumentContent) => (
+const Document = ({ bundlePath, children, description, initialData, title, vendorPath }: IDocumentContent) => (
   <html>
     <head>
       <title>{title}</title>
@@ -17,6 +18,7 @@ const Document = ({ bundlePath, children, description, initialData, title}: IDoc
     <body>
       <div id="app">{children}</div>
       <script id="initial-data" type="text/plain" data-json={initialData} />
+      <script src={vendorPath} />
       <script src={bundlePath} />
     </body>
   </html>

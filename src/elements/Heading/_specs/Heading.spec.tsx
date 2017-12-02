@@ -7,7 +7,7 @@ import {
 
 import Heading, {
   HeadingType,
-} from 'elements/Heading/Heading'
+} from '../Heading'
 
 const testName = `Zac`
 

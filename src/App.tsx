@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Route } from 'react-router'
 
-import AppContainer from 'elements/AppContainer'
+import AppContainer from 'elements/AppContainer/AppContainer'
 
 import Public from 'public/Public'
 
