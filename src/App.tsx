@@ -3,7 +3,7 @@ import { Route } from 'react-router'
 
 import AppContainer from 'elements/base/AppContainer'
 
-import Public from 'public/Public'
+import HomePage from 'public/HomePage'
 
 export interface IAppProps {
   name: string,
@@ -11,7 +11,7 @@ export interface IAppProps {
 
 const App = ({ name }: IAppProps) => (
   <AppContainer>
-    <Route exact path="/" component={Public} />
+    <Route exact path="/" component={HomePage} />
   </AppContainer>
 )
 

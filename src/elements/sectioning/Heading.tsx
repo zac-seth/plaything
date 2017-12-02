@@ -7,7 +7,7 @@ export enum HeadingType {
 
 export interface IHeadingProps {
   content: string
-  type: HeadingType
+  type?: HeadingType
 }
 
 const renderPageTitle = (content: string) => <h1>{content}</h1>
