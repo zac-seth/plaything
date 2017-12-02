@@ -6,8 +6,8 @@ import {
 } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 
-import App from './App'
-import Document from './Document'
+import App from 'elements/base/App'
+import Document from 'elements/base/Document'
 
 const server = express()
 
