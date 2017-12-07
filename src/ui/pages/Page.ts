@@ -1,8 +1,6 @@
 import { Component } from 'react'
 
-export interface IPageProps {
-  pageKey: string,
-}
+import IPageProps from './IPageProps'
 
 export default abstract class Page<TPageState = undefined> extends Component<IPageProps, TPageState> {
   constructor(props: IPageProps) {

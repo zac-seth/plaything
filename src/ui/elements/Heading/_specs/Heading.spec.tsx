@@ -5,15 +5,13 @@ import {
   ShallowWrapper,
 } from 'enzyme'
 
-import Heading, {
-  HeadingType,
-} from '../Heading'
+import Heading from '../Heading'
 
 const testName = `Zac`
 
 let heading: ShallowWrapper<undefined, undefined>
 
-beforeEach(() => heading = shallow(<Heading type={HeadingType.PAGE_TITLE} content={testName} />))
+beforeEach(() => heading = shallow(<Heading classes={{ heading: {} }} content={testName} />))
 
 describe(`When rendering the Heading component`, () => {
   it(`Should render without any error.`, () => expect(heading.length).toBe(1))

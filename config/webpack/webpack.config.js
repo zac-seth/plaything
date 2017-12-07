@@ -29,8 +29,7 @@ module.exports = {
       `.json`,
     ],
     alias: {
-      'elements': util.resolvePath(`src/elements`),
-      'public': util.resolvePath(`src/public`),
+      'ui': util.resolvePath(`src/ui`),
     },
   },
 }

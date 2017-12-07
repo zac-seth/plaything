@@ -1,8 +1,10 @@
 module.exports = [
-  'lodash',
-  'redux',
-  'react',
-  'react-dom',
+  `lodash`,
+  `redux`,
+  `react`,
+  `react-dom`,
+  `react-jss`,
+  `react-redux`,
   `react-router`,
-  'react-router-dom',
+  `react-router-dom`,
 ]

@@ -6,8 +6,8 @@ import {
 } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 
-import App from './App'
-import Document from 'elements/base/Document'
+import App from 'ui/App'
+import Document from 'ui/Document'
 
 const server = express()
 
@@ -25,7 +25,7 @@ server.get(`/`, (request, response) => {
       description="A plaything."
       initialData={JSON.stringify(initialData)}
       title="Plaything Inc"
-      vendorPath="/dist/vendor.js"
+      vendorPath="/dist/vendors.js"
       >
       <StaticRouter
         location={request.url}
